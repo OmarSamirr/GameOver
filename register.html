@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Games website" />
+    <meta name="keywords" content="Game Over , موقع العاب" />
+    <meta name="author" content="Omar Samir" />
+    <title>Register</title>
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <span class="position-fixed bottom-0 end-0 m-3 z-3">
+      <i role="button" id="mode" class="fa-regular fa-sun fa-xl p-3"></i>
+    </span>
+
+    <main class="container login min-vh-100 hstack">
+        <section class="login-area shadow w-100 rounded overflow-hidden">
+           <div class="row g-0">
+              <div class="col-lg-5 d-none d-md-block">
+                 <div class="image"></div>
+              </div>
+              <div class="col-lg-7">
+                 <div class="p-4">
+                    <header class="text-center">
+                       <img src="./assets/images/logo-sm.png" alt="game over logo" />
+                       <h1>Register to Game Over</h1>
+                    </header>
+
+                    <form class="row g-3 my-4" id="login">
+                     <div class="col-md-6">
+                        <div class="form-data">
+                           <input type="text" id="fName" class="form-control" placeholder="First Name" />
+                           <ul class="alert alert-danger p-0 invalid-feedback">
+                              <li>First Name Is Required.</li>
+                              <li>Must be at least 3 letters and 20 at most.</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="form-data">
+                           <input type="text" id="lName" class="form-control" placeholder="Last Name" />
+                           <ul class="alert alert-danger p-0 invalid-feedback">
+                              <li>Last Name Is Required.</li>
+                              <li>Must be at least 3 letters and 20 at most.</li>
+                           </ul>
+                        </div>
+                     </div>
+                       <div class="col-12">
+                          <div class="form-data">
+                             <input type="email" id="email" class="form-control" placeholder="Email Address" />
+                             <ul class="alert alert-danger p-0 invalid-feedback">
+                                <li>Email Is Required</li>
+                                <li>Invalid Email Format</li>
+                             </ul>
+                          </div>
+                       </div>
+                       <div class="col-12">
+                          <div class="form-data">
+                             <input type="password" id="password" class="form-control" placeholder="Password" />
+                             <ul class="alert alert-danger p-0 invalid-feedback">
+                                <li>Password Is Required</li>
+                                <li>Minimum eight characters, at least one letter and one number</li>
+                             </ul>
+                          </div>
+                       </div>
+                       <div class="col-12">
+                          <div class="form-data">
+                             <input type="number" id="age" class="form-control" placeholder="Age" />
+                             <ul class="alert alert-danger p-0 invalid-feedback">
+                                <li>Password Is Required</li>
+                                <li>Minimum eight characters, at least one letter and one number</li>
+                             </ul>
+                          </div>
+                       </div>
+
+                       <div class="col-12">
+                          <button type="submit" class="btn w-100 main-btn" id="btnLogin">Register</button>
+                          <p id="msg" class="text-center"></p>
+                       </div>
+                    </form>
+
+                    <footer>
+                       <p class="text-center small">
+                          Already a member?
+                          <a href="./index.html" class="link-secondary text-decoration-none" role="button"
+                             >Login <i class="fa-solid fa-angle-right"></i
+                          ></a>
+                       </p>
+                    </footer>
+                 </div>
+              </div>
+           </div>
+        </section>
+     </main>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
