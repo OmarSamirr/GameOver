@@ -39,7 +39,7 @@
                       class="form-control"
                       placeholder="First Name"
                     />
-                    <ul class="alert alert-danger p-0 invalid-feedback">
+                    <ul class="alert alert-danger p-2 invalid-feedback">
                       <li>First Name Is Required.</li>
                       <li>Must be at least 3 letters and 20 at most.</li>
                     </ul>
@@ -53,7 +53,7 @@
                       class="form-control"
                       placeholder="Last Name"
                     />
-                    <ul class="alert alert-danger p-0 invalid-feedback">
+                    <ul class="alert alert-danger p-2 invalid-feedback">
                       <li>Last Name Is Required.</li>
                       <li>Must be at least 3 letters and 20 at most.</li>
                     </ul>
@@ -67,9 +67,9 @@
                       class="form-control"
                       placeholder="Email Address"
                     />
-                    <ul class="alert alert-danger p-0 invalid-feedback">
-                      <li>Email Is Required</li>
-                      <li>Invalid Email Format</li>
+                    <ul class="alert alert-danger p-2 invalid-feedback">
+                      <li>Email Is Required.</li>
+                      <li>Invalid Email Format.</li>
                     </ul>
                   </div>
                 </div>
@@ -81,11 +81,11 @@
                       class="form-control"
                       placeholder="Password"
                     />
-                    <ul class="alert alert-danger p-0 invalid-feedback">
-                      <li>Password Is Required</li>
+                    <ul class="alert alert-danger p-2 invalid-feedback">
+                      <li>Password Is Required.</li>
                       <li>
                         Minimum eight characters, at least one letter and one
-                        number
+                        number.
                       </li>
                     </ul>
                   </div>
@@ -98,12 +98,9 @@
                       class="form-control"
                       placeholder="Age"
                     />
-                    <ul class="alert alert-danger p-0 invalid-feedback">
-                      <li>Password Is Required</li>
-                      <li>
-                        Minimum eight characters, at least one letter and one
-                        number
-                      </li>
+                    <ul class="alert alert-danger p-2 invalid-feedback">
+                      <li>Age Is Required.</li>
+                      <li>Age Allowed between 10 and 80 years.</li>
                     </ul>
                   </div>
                 </div>
@@ -116,7 +113,7 @@
                   >
                     Register
                   </button>
-                  <p id="msg" class="text-center"></p>
+                  <p id="msg" class="text-center text-capitalize mt-3"></p>
                 </div>
               </form>
 
@@ -125,7 +122,7 @@
                   Already a member?
                   <a
                     href="./index.html"
-                    class="link-secondary text-decoration-none"
+                    class="link-primary text-decoration-none"
                     role="button"
                     >Login <i class="fa-solid fa-angle-right"></i
                   ></a>
