@@ -4,6 +4,32 @@ const inputs = document.querySelectorAll("input");
 const loading = document.querySelector(".loading");
 const errorMsg = document.getElementById("msg");
 
+//! On Start
+(function () {
+  const icon = document.getElementById("mode");
+  icon.addEventListener("click", function () {
+    if (document.documentElement.dataset.theme == "dark") {
+      document.documentElement.dataset.theme = "light";
+      icon.classList.replace("fa-sun", "fa-moon");
+      localStorage.setItem("theme", "light");
+    } else if (document.documentElement.dataset.theme == "light") {
+      document.documentElement.dataset.theme = "dark";
+      icon.classList.replace("fa-moon", "fa-sun");
+      localStorage.setItem("theme", "dark");
+    }
+  });
+  if (localStorage.getItem("theme") !== null) {
+    if (localStorage.getItem("theme") == "dark") {
+      document.documentElement.dataset.theme = "dark";
+      icon.classList.replace("fa-moon", "fa-sun");
+    } else {
+      document.documentElement.dataset.theme = "light";
+      icon.classList.replace("fa-sun", "fa-moon");
+    }
+  }
+})();
+
+
 //? Events
 form.addEventListener("submit", function (e) {
   e.preventDefault();
